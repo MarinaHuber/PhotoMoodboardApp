@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Header" customModule="OdetteNew" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cel-rW-AJn" customClass="Header" customModule="OdetteNew">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="guE-1h-bkq">
+                    <rect key="frame" x="14" y="31" width="83" height="80"/>
+                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="Hr6-W9-nzJ"/>
+                        <constraint firstAttribute="height" constant="80" id="qiL-iJ-RtB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK5-iY-trv">
+                    <rect key="frame" x="9" y="8" width="399" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="CiT-bT-MB6"/>
+                        <constraint firstAttribute="width" constant="399" id="aAJ-ZV-TJn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTb-3N-897">
+                    <rect key="frame" x="9" y="108" width="393" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="393" id="m9J-Xa-ojq"/>
+                        <constraint firstAttribute="height" constant="25" id="w6Y-6d-zpe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Contact Odette for orders store information">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="contactUs:" destination="-1" eventType="touchUpInside" id="V4r-dr-HdP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaC-7W-XqY">
+                    <rect key="frame" x="105" y="31" width="308" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="308" id="mbe-IJ-pY0"/>
+                    </constraints>
+                    <string key="text">Lorem Ipsum loricus para ttoalpe stelp poda maranix  hexa loper topa loppaarosk j frotex zapitus malagu wetex cotha deeet pol. Martin food roll emerit wopa loring kodind pathoewa.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.037224829196929932" green="0.082008637487888336" blue="0.098766021430492401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="qK5-iY-trv" firstAttribute="top" secondItem="Cel-rW-AJn" secondAttribute="top" constant="8" id="1Eh-FB-LY4"/>
+                <constraint firstAttribute="trailing" secondItem="HaC-7W-XqY" secondAttribute="trailing" constant="8" id="2O6-DA-gUK"/>
+                <constraint firstItem="guE-1h-bkq" firstAttribute="leading" secondItem="Cel-rW-AJn" secondAttribute="leading" constant="14" id="HIk-AV-nmb"/>
+                <constraint firstItem="HaC-7W-XqY" firstAttribute="top" secondItem="qK5-iY-trv" secondAttribute="bottom" constant="1" id="Hhb-J9-wjM"/>
+                <constraint firstItem="guE-1h-bkq" firstAttribute="top" secondItem="qK5-iY-trv" secondAttribute="bottom" constant="1" id="W3e-k4-ERR"/>
+                <constraint firstAttribute="trailing" secondItem="qK5-iY-trv" secondAttribute="trailing" constant="13" id="Wrp-7y-Na1"/>
+                <constraint firstAttribute="bottom" secondItem="guE-1h-bkq" secondAttribute="bottom" constant="22" id="ZVm-Aq-phS"/>
+                <constraint firstItem="OTb-3N-897" firstAttribute="top" secondItem="qK5-iY-trv" secondAttribute="bottom" constant="78" id="erS-80-awC"/>
+                <constraint firstAttribute="trailing" secondItem="OTb-3N-897" secondAttribute="trailing" constant="19" id="j8h-bt-PoH"/>
+                <constraint firstItem="qK5-iY-trv" firstAttribute="leading" secondItem="Cel-rW-AJn" secondAttribute="leading" constant="9" id="nkA-q1-o9q"/>
+                <constraint firstItem="HaC-7W-XqY" firstAttribute="leading" secondItem="guE-1h-bkq" secondAttribute="trailing" constant="8" id="rlI-oH-wai"/>
+                <constraint firstItem="OTb-3N-897" firstAttribute="leading" secondItem="guE-1h-bkq" secondAttribute="trailing" constant="-88" id="v9h-t9-VWA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionTxt" destination="HaC-7W-XqY" id="QKy-oL-Mcw"/>
+                <outlet property="emailBtn" destination="OTb-3N-897" id="K2O-vK-R15"/>
+                <outlet property="lblTitle" destination="qK5-iY-trv" id="HXc-lq-jKm"/>
+                <outlet property="profilePic" destination="guE-1h-bkq" id="IUo-wl-kSW"/>
+            </connections>
+            <point key="canvasLocation" x="463.5" y="5.5"/>
+        </view>
+    </objects>
+</document>

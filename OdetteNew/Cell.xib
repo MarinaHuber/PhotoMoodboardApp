@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Cell" customModule="OdetteNew" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="uVl-Kf-asW" customClass="Cell" customModule="OdetteNew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Kk-bNc">
+                        <rect key="frame" x="167" y="86" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Zef-VU-1ul"/>
+                            <constraint firstAttribute="height" constant="20" id="i5u-We-lOe"/>
+                        </constraints>
+                    </activityIndicatorView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xaZ-nK-uKR">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="193"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-yu-8Ix">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="193"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-qZ-Vm9" userLabel="Delete">
+                        <rect key="frame" x="312" y="0.0" width="41" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="Iwq-De-wF5"/>
+                            <constraint firstAttribute="height" constant="41" id="dkW-Tl-MGn"/>
+                        </constraints>
+                        <color key="tintColor" red="0.62745098039215685" green="0.0" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="delete_pressed.png"/>
+                        <connections>
+                            <action selector="deleteFav:" destination="uVl-Kf-asW" eventType="touchUpInside" id="BbH-76-5On"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done_bronze.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Gx-bi-2kJ">
+                        <rect key="frame" x="322" y="160" width="25" height="25"/>
+                        <color key="tintColor" red="0.62745098040000002" green="0.0" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="dxM-uJ-3dh"/>
+                            <constraint firstAttribute="width" constant="25" id="f9j-Ba-FND"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J76-dL-Y4C" userLabel="Like">
+                        <rect key="frame" x="308" y="0.0" width="47" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="fy8-zS-mOH"/>
+                            <constraint firstAttribute="height" constant="45" id="kg7-75-FtP"/>
+                        </constraints>
+                        <color key="tintColor" red="0.62745098040000002" green="0.0" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="icon_favorite_empty.png"/>
+                        <state key="selected" image="icon_favorite_full.png"/>
+                        <connections>
+                            <action selector="likeBttn:" destination="uVl-Kf-asW" eventType="touchUpInside" id="vEj-mB-0Ym"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xaZ-nK-uKR" firstAttribute="top" secondItem="uVl-Kf-asW" secondAttribute="top" id="0NB-EJ-YwK"/>
+                <constraint firstItem="ac9-qZ-Vm9" firstAttribute="top" secondItem="uVl-Kf-asW" secondAttribute="top" id="M87-Ez-ZyV"/>
+                <constraint firstItem="Te9-Kk-bNc" firstAttribute="centerX" secondItem="uVl-Kf-asW" secondAttribute="centerX" id="WXK-RX-JIf"/>
+                <constraint firstAttribute="bottom" secondItem="xaZ-nK-uKR" secondAttribute="bottom" id="WYg-nv-9dZ"/>
+                <constraint firstItem="zmN-yu-8Ix" firstAttribute="top" secondItem="uVl-Kf-asW" secondAttribute="top" id="ZEx-Hn-Kyl"/>
+                <constraint firstItem="xaZ-nK-uKR" firstAttribute="leading" secondItem="uVl-Kf-asW" secondAttribute="leading" id="b60-Wu-sbm"/>
+                <constraint firstItem="Te9-Kk-bNc" firstAttribute="centerY" secondItem="uVl-Kf-asW" secondAttribute="centerY" id="bBu-aL-EZ7"/>
+                <constraint firstAttribute="trailing" secondItem="2Gx-bi-2kJ" secondAttribute="trailing" constant="8" id="bJ0-cd-Blp"/>
+                <constraint firstAttribute="trailing" secondItem="xaZ-nK-uKR" secondAttribute="trailing" id="cjs-4q-UDb"/>
+                <constraint firstItem="zmN-yu-8Ix" firstAttribute="leading" secondItem="uVl-Kf-asW" secondAttribute="leading" id="dXZ-03-I4p"/>
+                <constraint firstAttribute="trailing" secondItem="zmN-yu-8Ix" secondAttribute="trailing" id="fMM-9f-s4h"/>
+                <constraint firstAttribute="bottom" secondItem="2Gx-bi-2kJ" secondAttribute="bottom" constant="8" id="ffy-XU-XuI"/>
+                <constraint firstAttribute="trailing" secondItem="J76-dL-Y4C" secondAttribute="trailing" id="jdB-Be-e0D"/>
+                <constraint firstAttribute="bottom" secondItem="zmN-yu-8Ix" secondAttribute="bottom" id="lLP-DP-UHX"/>
+                <constraint firstAttribute="trailing" secondItem="ac9-qZ-Vm9" secondAttribute="trailing" constant="2" id="pH7-IR-CW4"/>
+                <constraint firstItem="J76-dL-Y4C" firstAttribute="top" secondItem="uVl-Kf-asW" secondAttribute="top" id="pmR-21-0gi"/>
+            </constraints>
+            <size key="customSize" width="355" height="193"/>
+            <connections>
+                <outlet property="FavoritesBtn" destination="J76-dL-Y4C" id="YLa-MO-BHF"/>
+                <outlet property="acivity" destination="Te9-Kk-bNc" id="Mzy-xw-8xq"/>
+                <outlet property="deleteFavorites" destination="ac9-qZ-Vm9" id="AcV-lv-7HD"/>
+                <outlet property="imageCell" destination="xaZ-nK-uKR" id="02R-UQ-Zbw"/>
+                <outlet property="selectedMoodboard" destination="2Gx-bi-2kJ" id="wso-VU-WI5"/>
+                <outlet property="whiteMask" destination="zmN-yu-8Ix" id="VGW-N3-Fs7"/>
+            </connections>
+            <point key="canvasLocation" x="-52.5" y="-85.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_pressed.png" width="22" height="22"/>
+        <image name="done_bronze.png" width="22" height="22"/>
+        <image name="icon_favorite_empty.png" width="28" height="27"/>
+        <image name="icon_favorite_full.png" width="28" height="27"/>
+    </resources>
+</document>
